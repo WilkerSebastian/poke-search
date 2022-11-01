@@ -5,17 +5,16 @@ $("#pesquisa").on("click" , async ()=> {
 
         res.json().then((e) => {
 
-            const img = new Image()
-            img.src = e.sprites.back_default
+            $("#pokemon").css("display" , "block")
 
-            $("main").append(img)
+            $("#name").text(e.forms[0].name.toUpperCase())
+            $("#sprite").attr("src" , e.sprites.front_default)
 
-            $("#resultado").text(`
-            
-                tipo: ${e.types[0].type.name}
-            
-            `)
+            e.stats.forEach((s:any) => {
 
+                $("#status").append(createDiv(s.stat.name , s.base_stat))
+
+            })
 
         })
         .catch(err => {
@@ -23,7 +22,6 @@ $("#pesquisa").on("click" , async ()=> {
             alert("erro: " + err)
     
         })
-
     })
     .catch(err => {
 
@@ -32,3 +30,14 @@ $("#pesquisa").on("click" , async ()=> {
     })
 
 })
+
+function createDiv(nome:string , valor:number) {
+
+    return `<div class="col">
+    
+        <h5>${nome}</h5>
+        <p>${valor}</p>
+    
+    </div>`
+
+}

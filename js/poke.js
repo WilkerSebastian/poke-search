@@ -12,14 +12,12 @@ $("#pesquisa").on("click", () => __awaiter(void 0, void 0, void 0, function* () 
     yield fetch(`https://pokeapi.co/api/v2/pokemon/${$("#pokenome").val()}`)
         .then((res) => {
         res.json().then((e) => {
-            const img = new Image();
-            img.src = e.sprites.back_default;
-            $("main").append(img);
-            $("#resultado").text(`
-            
-                tipo: ${e.types[0].type.name}
-            
-            `);
+            $("#pokemon").css("display", "block");
+            $("#name").text(e.forms[0].name.toUpperCase());
+            $("#sprite").attr("src", e.sprites.front_default);
+            e.stats.forEach((s) => {
+                $("#status").append(createDiv(s.stat.name, s.base_stat));
+            });
         })
             .catch(err => {
             alert("erro: " + err);
@@ -29,3 +27,11 @@ $("#pesquisa").on("click", () => __awaiter(void 0, void 0, void 0, function* () 
         alert("erro: " + err);
     });
 }));
+function createDiv(nome, valor) {
+    return `<div class="col">
+    
+        <h5>${nome}</h5>
+        <p>${valor}</p>
+    
+    </div>`;
+}

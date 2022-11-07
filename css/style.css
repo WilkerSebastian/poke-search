@@ -1,5 +1,156 @@
+:root {
+
+    --black: rgb(22, 22, 22);
+    --white: rgb(247 , 247 , 247);
+    --fire: rgb(145, 18, 18); 
+    --ghost: rgb(90, 10, 127);
+    --bug: rgb(93, 214, 131);
+    --dark: rgb(28, 1, 41);
+    --dragon: rgb(38, 197, 218);
+    --electric: rgb(254, 237, 49);
+    --fairy: rgb(184, 34, 99);
+    --fighting: rgb(110, 58, 6);
+    --flying: rgb(226, 226, 226);
+    --grass: rgb(32, 168, 75);
+    --ground: rgb(158, 86, 14);
+    --ice: rgb(167, 203, 217);
+    --normal: rgb(125, 125, 125);
+    --poison:rgb(140, 29, 191);
+    --psychic: rgb(213, 53, 205);
+    --rock: rgb(58, 35, 11);
+    --steel: rgb(160 , 178 , 198);
+    --water: rgb(15, 54, 185);
+    
+}
+
 #pokemon {
 
     display: none;
+
+}
+
+.bug {
+
+    background-color: var(--bug);
+    color: var(--white);
+
+}
+
+.dark {
+
+    background-color: var(--dark);
+    color: var(--white);
+
+}
+
+.dragon {
+
+    background-color: var(--dragon);
+    color: var(--white);
+
+}
+
+.electric {
+
+    background-color: var(--electric);
+    color: var(--white);
+
+}
+
+.fairy {
+
+    background-color: var(--fairy);
+    color: var(--white);
+
+}
+
+.fighting {
+
+    background-color: var(--fighting);
+    color: var(--white);
+
+}
+
+.flying {
+
+    background-color: var(--flying);
+    color: var(--black);
+
+}
+
+.grass {
+
+    background-color: var(--grass);
+    color: var(--white);
+
+}
+
+.ground {
+
+    background-color: var(--ground);
+    color: var(--white);
+
+}
+
+.ice {
+
+    background-color: var(--ice);
+    color: var(--white);
+
+}
+
+.poison {
+
+    background-color: var(--poison);
+    color: var(--white);
+
+}
+
+.psychic {
+
+    background-color: var(--psychic);
+    color: var(--white);
+
+}
+
+.steel {
+
+    background-color: var(--steel);
+    color: var(--white);
+
+}
+
+.rock {
+
+    background-color: var(--rock);
+    color: var(--white);
+
+}
+
+.water {
+
+    background-color: var(--water);
+    color: var(--white);
+
+}
+
+.normal {
+
+    background-color:var(--normal);
+    color: var(--white);
+
+}
+
+.ghost {
+
+    background-color: var(--ghost);
+    color: var(--white);
+
+}
+
+.fire {
+
+    background-color: var(--fire);
+    color:var(--white);
 
 }

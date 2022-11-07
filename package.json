@@ -1,7 +1,1 @@
-{
-  "dependencies": {
-    "@types/jquery": "^3.5.14",
-    "bootstrap": "^5.2.2",
-    "jquery": "^3.6.1"
-  }
-}
+{"dependencies":{"@types/jquery":"^3.5.14","bootstrap":"^5.2.2","gh-pages":"^4.0.0","jquery":"^3.6.1"},"name":"poke-search","description":"<h1>Poke-Search</h1>","version":"1.0.0","main":"index.js","scripts":{"build":"npm i","predeploy":"npm run build","deploy":"gh-pages -d build","test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"git+https://github.com/WilkerSebastian/poke-search.git"},"keywords":[],"author":"","license":"ISC","bugs":{"url":"https://github.com/WilkerSebastian/poke-search/issues"}}
